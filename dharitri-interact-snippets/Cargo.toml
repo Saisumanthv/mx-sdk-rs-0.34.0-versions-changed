@@ -1,0 +1,30 @@
+[package]
+name = "dharitri-interact-snippets"
+version = "0.0.1"
+edition = "2018"
+
+authors = [
+    "Andrei Marinica <andrei.marinica@dharitri.com>",
+    "Dharitri Network <contact@dharitri.com>",
+]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/Battula-anil-app-could/dx-sdk-rs-new"
+homepage = "https://dharitri.com/"
+documentation = "https://docs.dharitri.com/"
+description = "Dharitri framework for building smart contract interaction snippets"
+keywords = ["dharitri", "blockchain", "contract", "snippets"]
+categories = ["cryptography::cryptocurrencies"]
+
+[dependencies]
+tokio = { version = "1.12.0", features = ["full"] }
+dharitri-sdk-erdrs = "0.0.3"
+hex = "0.4"
+base64 = "0.13.0"
+log = "0.4.17"
+env_logger = "0.8.4"
+
+[dependencies.dharitri-wasm-debug]
+version = "=0.5.2"
+path = "../dharitri-wasm-debug"
+

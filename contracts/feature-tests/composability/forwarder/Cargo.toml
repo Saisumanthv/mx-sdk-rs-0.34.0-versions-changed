@@ -1,0 +1,25 @@
+[package]
+name = "forwarder"
+version = "0.0.0"
+authors = ["Andrei Marinica <andrei.marinica@dharitri.com>"]
+edition = "2018"
+publish = false
+
+[lib]
+path = "src/forwarder_main.rs"
+
+[features]
+ei-unmanaged = ["dharitri-wasm/ei-unmanaged"]
+
+[dependencies.vault]
+path = "../vault"
+
+[dependencies.dharitri-wasm]
+version = "0.5.2"
+path = "../../../../dharitri-wasm"
+features = ["ei-1-2"]
+
+[dev-dependencies.dharitri-wasm-debug]
+version = "0.5.2"
+path = "../../../../dharitri-wasm-debug"
+
